@@ -197,6 +197,21 @@
     .contact-grid{grid-template-columns:1fr;}
     .stat-row{flex-direction:column;}
   }
+  .example-grid{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:14px; margin-top:14px;
+  }
+  .example-card{
+    background:rgba(255,255,255,0.035); border:1px solid var(--glass-brd);
+    border-radius:12px; padding:18px 20px;
+  }
+  .example-card .tag-label{
+    font-family:var(--mono); font-size:10.5px; letter-spacing:.06em; text-transform:uppercase;
+  }
+  .example-card.ml .tag-label{color:var(--cyan);}
+  .example-card.dl .tag-label{color:var(--violet);}
+  .example-card h4{font-family:var(--display); font-size:1rem; margin:8px 0 6px; color:#fff;}
+  .example-card p{font-size:13px; margin:0;}
 </style>
 </head>
 <body>
@@ -210,6 +225,7 @@
     <a href="#bio">Bio</a>
     <a href="#artifact">Artifact 1</a>
     <a href="#artifact2">Artifact 2</a>
+    <a href="#artifact3">Artifact 3</a>
   </nav>
 </div>
 
@@ -223,6 +239,7 @@
       <a href="#value" data-target="value"><span class="dot"></span>Value</a>
       <a href="#artifact" data-target="artifact"><span class="dot"></span>Artifact 1</a>
       <a href="#artifact2" data-target="artifact2"><span class="dot"></span>Artifact 2</a>
+      <a href="#artifact3" data-target="artifact3"><span class="dot"></span>Artifact 3</a>
     </nav>
     <div class="sidebar-foot">AI in Data Analytics<br>Indiana Wesleyan University</div>
   </aside>
@@ -238,7 +255,7 @@
       </p>
       <div class="stat-row">
         <div class="stat"><span class="k">6+</span><span class="v">core tools</span></div>
-        <div class="stat"><span class="k">2</span><span class="v">featured artifacts</span></div>
+        <div class="stat"><span class="k">3</span><span class="v">featured artifacts</span></div>
         <div class="stat"><span class="k">MS</span><span class="v">AI in Data Analytics</span></div>
       </div>
       <div class="cta-row">
@@ -543,13 +560,142 @@
       </div>
     </section>
 
+    <section id="artifact3">
+      <div class="eyebrow">Artifact 03</div>
+      <h2>Machine Learning vs. Deep Learning: Real-World Applications</h2>
+
+      <div class="panel">
+        <div class="field">
+          <h3>Introduction</h3>
+          <p>
+            Machine learning and deep learning are both foundational branches of artificial
+            intelligence, but they are built to solve different kinds of problems. Understanding
+            when to apply each is a core skill for anyone designing AI-driven systems.
+          </p>
+        </div>
+        <div class="field">
+          <h3>Description</h3>
+          <p>
+            This artifact is a comparative analysis written for my AI in Data Analytics coursework,
+            examining how machine learning and deep learning differ in practice through two
+            real-world applications: email spam detection and medical image analysis. It walks
+            through why each approach fits its respective problem and where the other would fall
+            short.
+          </p>
+        </div>
+        <div class="field">
+          <h3>Objective</h3>
+          <p style="margin-bottom:0;">
+            Analyze and communicate the practical differences between machine learning and deep
+            learning by evaluating real-world use cases, demonstrating the judgment needed to choose
+            the right approach for a given problem.
+          </p>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Process</h3>
+        <ul class="plain" style="margin-bottom:0;">
+          <li>Reviewed core concepts distinguishing machine learning from deep learning.</li>
+          <li>Selected two contrasting real-world applications to illustrate the comparison.</li>
+          <li>Analyzed why each approach is suited (or unsuited) to its example.</li>
+          <li>Drew a conclusion on how problem type should guide method selection.</li>
+          <li>Cited credible industry references (Google, IBM) to support the analysis.</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3>Key comparison</h3>
+        <p>Two contrasting real-world examples anchor the analysis:</p>
+        <div class="example-grid">
+          <div class="example-card ml">
+            <div class="tag-label">Machine Learning</div>
+            <h4>Email spam detection</h4>
+            <p>
+              Structured signals — sender, keywords, links, user behavior — make this a strong fit
+              for ML: fast, efficient, and accurate without heavy compute.
+            </p>
+          </div>
+          <div class="example-card dl">
+            <div class="tag-label">Deep Learning</div>
+            <h4>Medical image analysis</h4>
+            <p>
+              Detecting disease in X-rays, CT, and MRI scans involves too many fine-grained details
+              to hand-engineer. CNNs learn patterns directly from the images, often outperforming
+              traditional methods.
+            </p>
+          </div>
+        </div>
+        <p style="margin-top:14px; margin-bottom:0;">
+          <strong style="color:#fff;">Conclusion:</strong> neither approach is universally better —
+          machine learning wins on structured, well-understood problems, while deep learning wins
+          where patterns are too complex to define by hand. Knowing which to reach for is the real skill.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h3>Tools &amp; technologies used</h3>
+        <div class="chip-row" style="margin-top:0;">
+          <span class="chip">Microsoft Word</span>
+          <span class="chip">Academic Research</span>
+          <span class="chip">Technical Writing</span>
+          <span class="chip">Comparative Analysis</span>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Value proposition</h3>
+        <p style="margin-bottom:0;">
+          This artifact shows that I understand AI at a conceptual level, not just an implementation
+          level — the ability to reason about which technique fits a problem is what separates
+          effective AI practitioners from those who default to a single tool for everything.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h3>Unique value</h3>
+        <p>This artifact demonstrates:</p>
+        <ul class="plain" style="margin-bottom:0;">
+          <li>Conceptual understanding of ML vs. DL</li>
+          <li>Comparative analysis</li>
+          <li>Real-world application reasoning</li>
+          <li>Clear technical writing</li>
+          <li>Evidence-based conclusions</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3>Relevance</h3>
+        <p>Intended audience:</p>
+        <ul class="plain">
+          <li>Recruiters</li>
+          <li>Hiring Managers</li>
+          <li>AI/ML Professionals</li>
+          <li>Students</li>
+        </ul>
+        <p style="margin-bottom:0;">
+          Choosing the right technique for a problem is a foundational decision in any AI or data
+          engineering role — this artifact shows I can make and explain that judgment call clearly.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h3>References</h3>
+        <ul class="plain" style="margin-bottom:0;">
+          <li>Google. (n.d.). <a href="https://support.google.com/mail/answer/1366858" target="_blank" rel="noopener">Gmail spam protection</a>.</li>
+          <li>IBM. (n.d.). <a href="https://www.ibm.com/think/topics/machine-learning" target="_blank" rel="noopener">Machine learning</a>.</li>
+          <li>IBM. (n.d.). <a href="https://www.ibm.com/think/topics/deep-learning" target="_blank" rel="noopener">Deep learning</a>.</li>
+        </ul>
+      </div>
+    </section>
+
   </main>
 </div>
 
 <script>
   const links = document.querySelectorAll('#sideNav a');
   const topLinks = document.querySelectorAll('.topbar nav a');
-  const sections = ['overview','bio','value','artifact','artifact2'].map(id => document.getElementById(id));
+  const sections = ['overview','bio','value','artifact','artifact2','artifact3'].map(id => document.getElementById(id));
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
